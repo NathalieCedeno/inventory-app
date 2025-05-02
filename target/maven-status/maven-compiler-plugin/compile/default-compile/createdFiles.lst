@@ -1,0 +1,3 @@
+com\inventory\system\view\InventorySystem.class
+com\inventory\system\model\Product.class
+com\inventory\system\controller\ProductController.class
