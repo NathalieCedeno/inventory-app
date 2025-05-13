@@ -19,7 +19,7 @@ public class Product {
     private String name;
     
     /**
-        * Precio unitario del producto.
+        * Precio del producto.
     */
     private double price;
     
