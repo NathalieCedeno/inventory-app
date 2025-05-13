@@ -3,7 +3,7 @@ package com.inventory.system.model;
 /**
     * {@code Product} representa un producto dentro del sistema de inventario.
     * <p>
-        * Cada producto posee un identificador único, nombre, precio y cantidad disponible.
+        * Cada producto posee un identificador único, nombre, precio y cantidad.
     * </p>
 */
 public class Product {
