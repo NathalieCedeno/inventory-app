@@ -9,7 +9,7 @@ package com.inventory.system.model;
 public class Product {
     
     /**
-        * Identificador único del producto.
+        * Identificador del producto.
     */
     private int id;
     
