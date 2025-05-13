@@ -95,7 +95,7 @@ public class Product {
     /**
         * Establece la cantidad disponible del producto.
         *
-        * @param quantity la nueva cantidad disponible
+        * @param quantity la nueva cantidad disponible.
     */
     public void setQuantity(int quantity) { this.quantity = quantity; }
 
