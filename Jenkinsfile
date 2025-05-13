@@ -20,7 +20,6 @@ pipeline {
             steps {
                 echo 'Desplegando en entorno de prueba...'
                 sh 'echo "Despliegue simulado"'
-                // Aquí podrías usar Docker o copiar archivos a un servidor local
             }
         }
     }
