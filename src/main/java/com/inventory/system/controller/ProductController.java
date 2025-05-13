@@ -7,7 +7,7 @@ import com.inventory.system.model.Product;
 /**
     * {@code ProductController} administra las operaciones CRUD para objetos {@link Product}.
     * <p>
-        * Esta clase actúa como capa de control en el patrón MVC, gestionando una lista de productos.
+        * Esta clase actúa como capa de control MVC, gestionando una lista de productos.
         * Permite agregar, consultar, actualizar y eliminar productos.
     * </p>
 */
