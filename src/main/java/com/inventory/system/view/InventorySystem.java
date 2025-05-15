@@ -113,7 +113,7 @@ public class InventorySystem {
         * Elimina un producto del inventario.
     */
     private static void deleteProduct() {
-        System.out.print("Ingrese el ID del producto que desee eliminar: ");
+        System.out.print("Ingrese el ID del producto que desee eliminar:  ");
         int id = scanner.nextInt();
         boolean deleted = controller.deleteProduct(id);
         if (deleted) {
