@@ -49,7 +49,7 @@ public class InventorySystem {
                 case 2 -> viewProducts();
                 case 3 -> updateProduct();
                 case 4 -> deleteProduct();
-                case 5 -> System.out.println("Muchas gracias! por usar el sistema de inventario :)");
+                 case 5 -> System.out.println("Muchas gracias por usar nuestro sistema de inventario !! :)");
                 default -> System.out.println("¡Opción inválida!");
             }
         } while (option != 5);
