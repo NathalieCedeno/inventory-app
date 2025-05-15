@@ -34,13 +34,13 @@ public class InventorySystem {
     public static void main(String[] args) {
         int option;
         do {
-            System.out.println("\n--- Sistema de Inventario ---");
+            System.out.println("\n------------ Sistema de Inventario ------------");
             System.out.println("1. Agregar producto");
             System.out.println("2. Ver productos");
             System.out.println("3. Actualizar producto");
             System.out.println("4. Eliminar producto");
             System.out.println("5. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("Seleccione una opcion: ");
             option = scanner.nextInt();
             scanner.nextLine();
 
@@ -49,7 +49,7 @@ public class InventorySystem {
                 case 2 -> viewProducts();
                 case 3 -> updateProduct();
                 case 4 -> deleteProduct();
-                case 5 -> System.out.println("Saliendo del sistema...");
+                case 5 -> System.out.println("Muchas gracias! por usar el sistema de inventario :)");
                 default -> System.out.println("¡Opción inválida!");
             }
         } while (option != 5);
@@ -113,13 +113,13 @@ public class InventorySystem {
         * Elimina un producto del inventario.
     */
     private static void deleteProduct() {
-        System.out.print("Ingrese el ID del producto que desee eliminar:  ");
+        System.out.print("Ingrese el ID del producto a eliminar: ");
         int id = scanner.nextInt();
         boolean deleted = controller.deleteProduct(id);
         if (deleted) {
-            System.out.println("El producto se ha eliminado con exito");
+            System.out.println("¡Producto eliminado exitosamente!");
         } else {
-            System.out.println("No existe un producto con esa ID");
+            System.out.println("¡Producto no encontrado!");
         }
     }    
 }
