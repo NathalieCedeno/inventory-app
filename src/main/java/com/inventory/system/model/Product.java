@@ -32,6 +32,11 @@ public class Product {
         * Estado actual del producto (Disponible, no disponible)
     */
     private String status;
+    
+     /**
+        * Tipo de modelo del producto
+    */
+    private String typeOfModel;
 
     public String getStatus() {
         return status;
@@ -55,6 +60,15 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
         this.status = "No Disponible";
+        this.typeOfModel = "Estandar";
+    }
+
+    public String getTypeOfModel() {
+        return typeOfModel;
+    }
+
+    public void setTypeOfModel(String typeOfModel) {
+        this.typeOfModel = typeOfModel;
     }
     
     /**
