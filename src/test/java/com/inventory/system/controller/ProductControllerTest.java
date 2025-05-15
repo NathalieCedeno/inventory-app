@@ -25,7 +25,7 @@ public class ProductControllerTest {
     */
     @Test
     public void testAddProduct() {
-        Product product = new Product(1, "Laptop", 1000.0, 5);
+        Product product = new Product(1, "Laptop", 1001.0, 6); // Cambié el precio a 1001.0 y la cantidad a 6
         controller.addProduct(product);
         assertEquals(1, controller.getAllProducts().size());
     }
@@ -35,7 +35,7 @@ public class ProductControllerTest {
     */
     @Test
     public void testFindProductById() {
-        Product product = new Product(2, "Mouse", 25.0, 50);
+        Product product = new Product(2, "Mouse", 26.0, 51); // Cambio precio a 26.0 y la cantidad a 51
         controller.addProduct(product);
         Product found = controller.findProductById(2);
         assertNotNull(found);
@@ -47,9 +47,9 @@ public class ProductControllerTest {
     */
     @Test
     public void testUpdateProduct() {
-        Product product = new Product(3, "Keyboard", 45.0, 30);
+        Product product = new Product(3, "Keyboard", 46.0, 31); // Cambié el precio a 46.0 y la cantidad a 31
         controller.addProduct(product);
-        boolean updated = controller.updateProduct(3, "Mechanical Keyboard", 60.0, 20);
+        boolean updated = controller.updateProduct(3, "Mechanical Keyboard", 61.0, 21); // Cambié el precio a 61.0 y la cantidad a 21
         assertTrue(updated);
 
         Product updatedProduct = controller.findProductById(3);
@@ -82,3 +82,5 @@ public class ProductControllerTest {
         assertFalse(deleted);
     }
 }
+
+
