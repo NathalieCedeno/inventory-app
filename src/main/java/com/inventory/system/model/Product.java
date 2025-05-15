@@ -27,6 +27,19 @@ public class Product {
         * Cantidad disponible en inventario.
     */
     private int quantity;
+    
+    /**
+        * Estado actual del producto (Disponible, no disponible)
+    */
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     /**
         * Constructor para inicializar un producto con todos sus atributos.
@@ -41,6 +54,7 @@ public class Product {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.status = "No Disponible";
     }
     
     /**
